@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="lib-flexible-2.0/index.js"></script>
+	<script type="text/javascript" src="js/live.js"></script>
+	<script type="text/javascript" src="js/comment.js"></script>
+	<script type="text/javascript" src="js/liveRead.js"></script>
+	</head>
+	<body>
+		<div class="topmenu">
+			<div class="topmenu-icon l"><a href="index.html"><!--<img src="img/back.png"/>--><p>返回</p></a></div>
+			<div class="topmenu-title l"><a href="#">个人信息</a></div>
+			<div class="topmenu-icon r">
+		<a href="#" class="r">
+			<div class="styled-select">
+				<select name="citylist" onchange="link(this)">
+					<option value="0">更多</option>
+					<option value="release.html">
+						<a href="release.html">发布作品</a>
+					</option>
+					<!--<option value="2">深圳</option>
+            <option value="3">广州</option>-->
+				</select>
+				<script type="text/javascript">
+					function link(s) {
+						var d = s.options[s.selectedIndex].value;
+						window.open(d);
+						s.selectedIndex = 0;
+					}
+				</script>
+			</div>
+		</a>
+	</div>
+	    </div>
+		<div id="content">
+			<ul id="liveread"></ul>
+			<ul id="comment" class="comment"></ul>
+		</div>
+	</body>
+</html>

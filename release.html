@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		  <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		  <link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+	<script src="lib-flexible-2.0/index.js"></script>
+		<title></title>
+	</head>
+	<body>
+		<div class="topmenu">
+			<div class="topmenu-icon l"><a href="#"><!--<img src="img/back.png"/>--><p>返回</p></a></div>
+			<div class="topmenu-title l"><a href="#">发布</a></div>
+			<div class="topmenu-icon r">
+		<a href="#" class="r">
+			<div class="styled-select">
+				<select name="citylist" onchange="link(this)">
+					<option value="0">更多</option>
+					<option value="liveRead.html" disabled="disabled">
+						<a href="liveRead.html">发布作品</a>
+					</option>
+					<!--<option value="2">深圳</option>
+            <option value="3">广州</option>-->
+				</select>
+				<script type="text/javascript">
+					function link(s) {
+						var d = s.options[s.selectedIndex].value;
+						window.open(d);
+						s.selectedIndex = 0;
+					}
+				</script>
+			</div>
+		</a>
+	</div>
+	    </div>
+	    <div id="content">
+	    	<div class="release">
+	    		<div class="release-con">
+	    			<label><p>标题:</p>
+	    			<input type="text" value="请输入标题" onfocus="if(value=='请输入标题') {value=''}" onblur="if (value=='') {value='请输入标题'}"/>
+	    		</label>
+	    		<label><p>内容:</p>
+	    			<input type="text" style="height: 4rem;"value="请输入作品内容" onfocus="if(value=='请输入作品内容') {value=''}" onblur="if (value=='') {value='请输入作品内容'}"/>
+	    		</label>
+	    		</div>
+	    		<div class="release-add">
+	    			<input type="file" name="file" accept=".png" placeholder="添加照片"/>
+	    		</div>
+	    		
+	    		<div class="release-fabu">
+	    			<button type="button" id="fabu">发布作品</button>
+	    			<script>
+						document.getElementById('fabu').onclick=function(){
+							alert("发布作品成功");
+						}
+					 </script>
+	    		</div>
+	    	</div>
+	    </div>
+	    <ul class="menu">
+			<li class="index index-active">
+				<a href="index.html"  class="active">首页</a>
+			</li>
+			<li class="teach">
+				<a href="search.html">搜索</a>
+			</li>
+			<li class="total">
+				<a href="total.html">统计</a>
+			</li>
+			<li class="uesr">
+				<a href="user.html">我的</a>
+			</li>
+		</ul>
+	</body>
+</html>

@@ -1,0 +1,587 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	font-family: "微软雅黑",helvetica;
+	/*1920*1080的手机宽度 ，1080px=10rem*/
+	/*width: 10rem;*/
+	margin: 0 auto;
+	font-size: 16px;
+/*	background-color: #f1f1f1;*/
+}
+li{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+}
+#content{
+	margin-top: 1.27rem;
+	margin-bottom: 1.17rem;
+}
+.l{
+	float: left;
+}
+.r{
+	float: right;
+}
+/*-------------------------topmenu-----------------------*/
+.topmenu{
+	width: 10rem;
+	background-color: #333;
+	height: 1.17rem;
+	line-height: 1.17rem;
+	font-size: .48rem;
+	position: fixed;
+	top: 0;
+	text-align: center;
+}
+.topmenu-icon{
+	font-size: .40rem;
+	width: 2rem;
+}
+.topmenu-icon select{
+	border: none;
+	background-color: #333;
+	color: #FFFFFF;
+	height: .88rem;
+	font-size: .42rem;
+	margin-right: .3rem;
+	appearance:none;
+}
+.topmenu-icon select option{
+	color: #FFFFFF;
+}
+.topmenu a{
+	color: #FFFFFF;
+}
+.topmenu-icon a p{ 
+	margin-top: .06rem;
+	margin-right: .6rem;
+	float: right;
+}
+.topmenu-icon a img{
+	width: .58rem;
+	height: .58rem;
+	margin: 0.26rem .51rem .2rem .51rem;
+	width: .58rem;
+	height: .58rem;
+	float: left;
+	
+}
+.topmenu-title{
+	width: 6rem;
+}
+/*-------------------------右上角更多-----------------------*/
+.styled-select{
+      width: 1.2rem;
+      height: 1.17rem;
+      overflow: hidden;
+      background-color: #333333;
+      color: #FFFFFF;
+      border: none;
+    }
+    .styled-select select {
+      background: transparent;
+      width: 1.3rem;
+      font-size: .42rem;
+      border: none;
+      height: .77rem;
+      -webkit-appearance: none; /*for chrome*/
+     background-color: #333;
+     margin-top: .25rem;
+     color: #FFFFFF;
+    }
+/*-------------------------menu-----------------------*/
+.menu{
+	width: 10rem;
+	border-top:.05rem solid #FFFFFF;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	font-size: .33rem;
+	position: fixed;
+	bottom: 0;
+	background-color: #F2F2F2;
+	background-size: .58rem .58rem;
+	color: #4f4f4f;
+}
+
+
+.menu li {
+	float: left;
+	background-repeat: no-repeat;
+	background-position: .96rem .16rem;
+}
+
+.menu li a {
+	display: bolok;
+	float: left;
+	width: 2.5rem;
+	text-align: center;
+	color: #5b5b5b;
+	text-decoration: none;
+	margin: .34rem 0rem .12rem 0rem;
+	display: block;
+}
+
+.menu li a.active{
+	color: #3ea7d3;
+}
+.menu img{
+	width: .58rem;
+	height: .58rem;
+}
+.index{
+	background-image: url(../img/home.png);
+	background-size: .58rem .58rem;
+}
+.teach{
+	background-image: url(../img/test.png);
+	background-size: .58rem .58rem;
+}
+.total{
+	background-image: url(../img/hot.png);
+	background-size: .58rem .58rem;
+}
+.uesr{
+	background-image: url(../img/user.png);
+	background-size: .58rem .58rem;
+}
+.index-active{
+	background-image: url(../img/homeactive1.png);
+	background-size: .58rem .58rem;
+}
+.teach-active{
+	background-image: url(../img/testactive.png);
+	background-size: .58rem .58rem;
+}
+.total-active{
+	background-image: url(../img/hotactive.png);
+	background-size: .58rem .58rem;
+}
+.user-active{
+	background-image: url(../img/useractive.png);
+	background-size: .58rem .58rem;
+}
+
+/*-------------搜索页面搜索框---------------*/
+.search select{
+	width: 1.7rem;
+	font-size: .42rem;
+	height: 1rem;
+	line-height: 1rem;
+	border: none;
+	border-right:.05rem solid #FFFFFF;
+	background-color: #f2f2f2;
+	text-align: center;
+	color: #999;
+}
+.search select option{
+	text-align: center;
+	font-size: .42rem;
+}
+.search input{
+	color: #999;
+	width: 7.9rem;
+	font-size: .42rem;
+	height: 1rem;
+	line-height: 1rem;
+	background-color:#F2F2F2;
+	border: none;
+	float: right;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-size: .58rem .58rem;
+	background-position: .16rem;
+	text-align: center;
+}
+.search{
+	height: 1rem;
+	width: 9.6rem;
+	margin: .1rem .2rem;
+	background-color: #f2f2f2;
+}
+/*-------------------首页搜索框------------------------*/
+.searcher{
+	height: .77rem;
+	width: 9.6rem;
+	margin: .1rem .2rem;
+	background-color: #f2f2f2;
+	border-radius: .45rem;
+}
+.searcher input{
+	color: #999;
+	width: 9rem;
+	margin: 0rem .3rem;
+	font-size: .42rem;
+	height: .77rem;
+	line-height: .77rem;
+	background-color:#F2F2F2;
+	border: none;
+	float: right;
+	background-image: url(../img/search.png);
+	background-repeat: no-repeat;
+	background-size: .58rem .58rem;
+	background-position: .16rem;
+	text-align: center;
+	
+}
+ /*for chrome*/
+/*.search_info li{
+	width: 2rem;
+	float: left;
+	text-align: center;
+}
+.search_info li a{
+	width: 1.6rem;
+	margin: 0rem .2rem;
+	font-size: .42rem;
+	color: #999999;
+	display: block;
+}
+.search_info li a.active1{
+	border-bottom: .1rem solid #3EA7D3;
+}*/
+/*---------------------首页动态内容-----------------------*/
+#live{
+	width: 9.2rem;
+	margin: .4rem;
+}
+#live li{
+	/*height: 8.7rem;
+	border-bottom: solid .1rem #f1f1f1;*/
+}
+#live input{
+	width: 7.2rem;
+	height: .8rem;
+	background-color: #F2F2F2;
+	border: none;
+	float: right;
+	margin-right: .3rem;
+}
+#userLive{
+	width: 9.2rem;
+	margin: 0rem .4rem;
+}
+#userLive input{
+	width: 7.2rem;
+	height: .8rem;
+	background-color: #F2F2F2;
+	border: none;
+	font-size: .33rem;
+	float: right;
+	margin-right: .3rem;
+}
+.userIcon{
+	width: 1.5rem;
+	height: 1.5rem;
+	margin: .6rem .2rem 0rem .2rem;
+	margin-left: 0rem;
+/*	float: left;*/
+/*	border: solid .02rem #999999;*/
+}
+.userIcon img{
+	width: 1.5rem;
+	height: 1.5rem;
+}
+.userName{
+	width: 1.5rem;
+	height: .6rem;
+	margin: .2rem 0rem;
+/*	float: left;*/
+	font-size: .42rem;
+	line-height: .6rem;
+	text-align: center;
+}
+.userName a{
+	color: #4F94CD;
+}
+.userclass{
+	width: 1.5rem;
+	height: .6rem;
+	margin: .2rem 0rem;
+/*	float: left;*/
+	font-size: .33rem;
+	line-height: .6rem;
+	text-align: center;
+}
+.livecontent{
+	width: 7.1rem;
+	margin-right: .2rem;
+	float: right;
+	font-size: .37rem;
+	/*overflow: hidden;
+	white-space: pre-wrap;
+	text-overflow: ellipsis;
+	word-break:break-all ;*/
+/*	background-color: palegoldenrod;*/
+}
+.livecontent a{
+	color: #333333;
+}
+.liveimg{
+width: 7.1rem;
+	margin-right: .2rem;
+	height: 2rem;
+	float: right;
+	margin-top: .2rem;
+}
+.liveimg img{
+	width: 2.16rem;
+	margin: .1rem;
+	height: 1.8rem;
+}
+.livecopyright{
+	width: 7.1rem;
+	height: .6rem;
+/*	background-color: lawngreen;*/
+	margin: .2rem .2rem .2rem 0rem;
+	line-height: .6rem;
+	border-bottom: .02rem solid #F2F2F2;
+}
+.livecopyright p{
+	font-size: .39rem;
+	color: #4F94CD;
+}
+.livecopyright span{
+	color: #999999;
+	font-size: .33rem;
+}
+.livedate{
+	width: 7.1rem;
+	margin-right: .2rem;
+	height: .6rem;
+	line-height: .6rem;
+	float: right;
+	font-size: .3rem;
+	color: #A1A1A1;
+}
+#liveread{
+	width: 9.2rem;
+	margin: .4rem;
+}
+.comment{
+	width: 6.6rem;
+	margin:0rem 1rem;
+	float: right;
+	line-height: .8rem;
+}
+.comment a{
+	color: #4F94CD;
+	font-size: .37rem;
+	float: left;
+	padding: 0rem .1rem;
+}
+.comment p{
+	font-size: .37rem;
+	float: left;
+}
+.information{
+	width: 10rem;
+	height:4.2rem;
+	border-bottom: .02rem solid #ffff;
+}
+.myicon{
+	width: 3rem;
+	height: 3rem;
+	margin: .3rem 3.5rem 0rem 3.5rem;
+}
+.information-id{
+	height: .8rem;
+	text-align: center;
+}
+.information-id a{
+	margin-bottom: .2rem;
+	font-size: .48rem;
+	color: #999;
+}
+.myicon img{
+	width: 3rem;
+	height: 3rem;
+}
+/*-------------------user.html------------------------*/
+.users{
+	width: 9.2rem;
+	margin: .4rem;
+}
+.users li{
+	font-size: .42rem;
+	height: 1.3rem;
+	line-height: 1.3rem;
+	background-image: url(../img/link1.png);
+	background-size: .58rem .58rem;
+	background-repeat: no-repeat;
+	background-position: .3rem .41rem;
+	border-bottom: #3EA7D3 .01rem solid;
+}
+.users li img{
+	width: .58rem;
+	height: .58rem;
+	margin: .36rem .3rem 0rem 0rem;
+	float: left;
+}
+.users li a{
+	display: block;
+	color: #5B5B5B;
+	margin-left: 1rem;
+}
+.users li a span{
+	float: right;
+}
+.user-button{
+	width: 4.6rem;
+	height: .85rem;
+	margin: .4rem 2.7rem;
+	font-size: .4rem;
+	border-radius: .13rem;
+	border: .02rem #000000 solid;
+	background-color: #f2f2f2;
+}
+/*-------------------------统计页面---------------------------*/
+#totalscl{
+	width:9.2rem;
+	margin:0rem .4rem;
+	font-size: .42rem;
+	border-radius: .12rem;
+	margin-top: 2.8rem;
+}
+
+.total-title{
+	width: 9.2rem;
+	font-size: .48rem;
+	height: 1rem;
+	margin: .2rem .4rem;
+	background-color: #3EA7D3;
+	border-radius: .12rem;
+	position:fixed;
+	top: 1.37rem;
+	border: .02rem solid #FFFFFF;
+}
+.total-title a span{
+	width: 1.7rem;
+	height: 1rem;
+	line-height: 1rem;
+	display: block;
+	border-left: .02rem solid #FFFFFF;
+	float: right;
+	margin-top: -0.2rem;
+	font-size: .33rem;
+	text-align: center;
+}
+.total-title a{
+	display: block;
+	padding: .2rem 0 .06rem .4rem;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+ul.mtree{
+	margin-top: 1.4rem;
+}
+ul.mtree ul {
+  margin-left: .4rem;
+}
+ul.mtree li {
+	background-color: #3EA7D3;
+  list-style: none;
+  margin: .03rem 0rem;
+  border-bottom: .02rem solid #FFFFFF;
+}
+ul.mtree a {
+  display: block;
+  color: #FFFFFF;
+}
+ul.mtree li.mtree-node > a {
+  font-weight: bold;
+  color: #FFFFFF;
+}
+.a1{
+	height: .8rem;
+	line-height: .8rem;
+}
+ul.mtree a{
+	margin-left: .3rem;
+	color: #FFFFFF;
+}
+.a1 p{
+	float: left;
+	color: #FFFFFF;
+	font-weight: 500;
+}
+.a-span{
+	width: 1.7rem;
+	height: .8rem;
+	line-height: .8rem;
+	float: right;
+	font-size: .33rem;
+	text-align: center;
+	color: #FFFFFF;
+	font-weight: 500;
+	display: block;
+	border-left: .02rem solid #FFFFFF;
+}
+.xueyuan li a{
+	height: .8rem;
+	font-weight: 500;
+}
+.xueyuan li a p{
+	font-weight: 500;
+}
+.banji li a{
+	height: .8rem;
+	font-weight: 500;
+}
+/*-------------------------发布作品-----------------------*/
+.release{
+	width: 9.2rem;
+	margin: .1rem .4rem;
+}
+
+.release p{
+	font-size: .42rem;
+	width: 1rem;
+	height: .88rem;
+	float: left;
+	line-height: .88rem;
+	margin-top:.5rem ;
+}
+.release-con input{
+	width: 7.7rem;
+	height: .88rem;
+	float: right;
+	border: solid #999999 .02rem;
+	margin-top:.5rem ;
+	border-radius: .12rem;
+	color: #999;
+	font-size:.42rem;
+}
+.release-fabu button{
+	width: 4.5rem;
+	height: .88rem;
+	border: none;
+	border-radius: .12rem;
+	margin: .5rem 2.35rem;
+}
+.release-add{
+	/*width: 1.85rem;
+	height: 1.8rem;
+	background-image: url(../img/add.png);
+	background-size: 1.3rem;
+	background-repeat: no-repeat;
+	background-position:.25rem .1rem;*/
+	float: left;
+	border: none;
+	/*border-radius: .12rem;
+	border: .02rem solid #999999;*/
+	background-color: #FFFFFF;
+	/*line-height: 3.1rem;*/
+	margin-top: .3rem;
+	margin-left: 1.5rem;
+	color: #999999;
+}
+.release-add input{
+	/*width: 2rem;
+	height: 2rem;*/
+}
+

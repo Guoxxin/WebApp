@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+		<!--图片点击放大-->
+		<link rel="stylesheet" href="dist/zoomify.min.css">
+		<!--图片轮播css-->
+		<link rel="stylesheet" href="css/lunbo.css" />
+		<link rel="stylesheet" type="text/css" href="http://www.jq22.com/jquery/font-awesome.4.6.0.css">
+		<!--我的js-->
+		<script src="js/jquery-3.3.1/jquery-3.3.1.min.js"></script>
+		<script src="lib-flexible-2.0/index.js"></script>
+		<script type="text/javascript" src="js/live.js"></script>
+		<script type="text/javascript" src="js/comment.js"></script>
+		<script type="text/javascript" src="js/liveRead.js"></script>
+		<!--图片滚动-->
+	</head>
+
+	<body>
+		<div class="topmenu">
+			<div class="topmenu-icon l">
+				<a href="#">
+					<p>返回</p>
+				</a>
+			</div>
+			<div class="topmenu-title l">
+				<a href="#">首页</a>
+			</div>
+			<div class="topmenu-icon r">
+				<a href="#" class="r">
+					<div class="styled-select">
+						<select name="citylist" onchange="link(this)">
+							<option value="0">更多</option>
+							<option value="release.html">
+								<a href="release.html">发布作品</a>
+							</option>
+							<!--<option value="2"></option>
+                            <option value="3"></option>-->
+						</select>
+						<script type="text/javascript">
+							function link(s) {
+								var d = s.options[s.selectedIndex].value;
+								window.open(d);
+								s.selectedIndex = 0;
+							}
+						</script>
+					</div>
+				</a>
+			</div>
+		</div>
+		<div id="content">
+			<div class="searcher">
+				<input type="text" value="搜索..." onfocus="if(value=='搜索...') {value=''}" onblur="if (value=='') {value='搜索...'}">
+			</div>
+			<div id="wrapper">
+				<div id="slider-wrap">
+					<ul id="slider">
+						<li>
+							<a href="#"><img src="img/pic1.png" /></a>
+						</li>
+
+						<li>
+							<img src="img/pic2.png" />
+						</li>
+
+						<li>
+							<img src="img/pic3.png" />
+						</li>
+
+						<li>
+							<img src="img/pic4.png" />
+						</li>
+
+						<li>
+							<img src="img/pic5.png" />
+						</li>
+					</ul>
+					<!--controls-->
+					<div class="btns" id="next"><i class="fa fa-arrow-right"></i></div>
+					<div class="btns" id="previous"><i class="fa fa-arrow-left"></i></div>
+				</div>
+
+			</div>
+			<ul id="live">
+			</ul>
+		</div>
+		<ul class="menu">
+			<li class="index index-active">
+				<a href="index.html" class="active">首页</a>
+			</li>
+			<li class="teach">
+				<a href="search.html">搜索</a>
+			</li>
+			<li class="total">
+				<a href="total.html">统计</a>
+			</li>
+			<li class="uesr">
+				<a href="user.html">我的</a>
+			</li>
+		</ul>
+		<script type="text/javascript" src="js/slide.js"></script>
+		<script src="dist/zoomify.min.js"></script>
+		<script type="text/javascript">
+			$('#live img').zoomify();
+		</script>
+	</body>
+
+</html>

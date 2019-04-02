@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" href="css/style.css" />
+	<script type="text/javascript" src="js/jquery.min.js"></script>
+	<script src="lib-flexible-2.0/index.js"></script>
+	<script src="js/person.js"></script>
+	</head>
+	<body>
+		<div class="topmenu">
+			<div class="topmenu-icon l"><a href="index.html"><p>返回</p></a></div>
+			<div class="topmenu-title l"><a href="#">我的</a></div>
+			<div class="topmenu-icon r">
+		<a href="#" class="r">
+			<div class="styled-select">
+				<select name="citylist" onchange="link(this)">
+					<option value="0">更多</option>
+					<option value="release.html">
+						<a href="release.html">发布作品</a>
+					</option>
+					<!--<option value="2">深圳</option>
+            <option value="3">广州</option>-->
+				</select>
+				<script type="text/javascript">
+					function link(s) {
+						var d = s.options[s.selectedIndex].value;
+						window.open(d);
+						s.selectedIndex = 0;
+					}
+				</script>
+			</div>
+		</a>
+	</div>
+	    </div>
+	    <div id="content">
+			<div class="information">
+				<div class="myicon">
+					<img src="img/b.png" />
+				</div>
+				<div class="information-id"><a href="#">ID:buer</a></div>
+			</div>
+			<ul class="users">
+				<li><a href="#">修改个人信息</a></li>
+				<li><a href="userLive.html?id=data.rows[i].userID">我的作品</a></li>
+				<li><a href="#">修改密码</a></li>
+			</ul>
+			<button type="button" class="user-button">注销账户</button>
+		</div>
+        <ul class="menu">
+			<li class="index">
+				<a href="index.html">首页</a>
+			</li>
+			<li class="teach">
+				<a href="search.html">搜索</a>
+			</li>
+			<li class="total">
+				<a href="total.html">统计</a>
+			</li>
+			<li class="uesr user-active">
+				<a href="user.html"   class="active">我的</a>
+			</li>
+		</ul>
+	</body>
+</html>
